@@ -137,6 +137,9 @@ class FreteFixo(Frete):
             res = False
         return res
 
+    def calcular_frete(self, compra: Compra):
+        return compra.valor_total * 0.1
+
 
 class CobrarFrete():
 
